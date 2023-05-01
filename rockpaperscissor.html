@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head><title> Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./icon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+    <!-- Start -->
+    <button onclick="play()" id="play" >PLAY</button>
+
+    <!-- GAME -->
+    <div id="game">
+    <header align="center" style="">ROCK PAPER SCISSORS</header>
+    <p style="text-align: center;color: white;">SECURE 5 POINTS TO WIN</p>
+    <div class="container">
+    CPU : <span class="cpuvalue">*</span><br/>
+    <script src="./rockpaper.js"></script>
+    <div align="center">
+    <button type="text" class="save r" value="R" onclick="valueget(this.value)" ></button>
+    <button type="text" class="save p" value="P"  onclick="valueget(this.value)" ></button>
+    <button type="text" class="save s" value="S"  onclick="valueget(this.value)" ></button><br/>
+    <p>Result : <span class="result"></span></p>
+    User : <span class="user" style="margin-right:7vh;">0</span>
+    CPU : <span class="cpu">0</span>
+    </div>
+    </div>
+    <h2 class="finalres">abcd</h2>
+    <a class="restart" href="javascript:location.reload();" >RESTART</a>
+    </div>
+</body>
+</html>
